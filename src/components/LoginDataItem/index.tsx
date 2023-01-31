@@ -43,7 +43,7 @@ export function LoginDataItem({
       >
         <Icon
           name={passIsVisible ? "eye" : "eye-off"}
-          color={passIsVisible ? '#1967FB' : '#888D97'}
+          color={passIsVisible ? '#0e7490' : '#888D97'}
         />
       </ShowPasswordButton>
 

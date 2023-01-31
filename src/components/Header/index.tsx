@@ -1,6 +1,5 @@
-import React from 'react';
-import { useNavigation } from '@react-navigation/native';
-
+import React from "react";
+import { useNavigation } from "@react-navigation/native";
 
 import {
   Container,
@@ -14,14 +13,14 @@ import {
   Icon,
   BackButton,
   Title,
-} from './styles';
-import { StackNavigationProp } from '@react-navigation/stack';
+} from "./styles";
+import { StackNavigationProp } from "@react-navigation/stack";
 
 interface HeaderProps {
   user?: {
     name: string;
     avatar_url: string;
-  }
+  };
 }
 
 type RootStackParamList = {
@@ -35,7 +34,7 @@ export function Header({ user }: HeaderProps) {
   const { navigate, goBack } = useNavigation<NavigationProps>();
 
   function handleAddPass() {
-    navigate('RegisterLoginData');
+    navigate("RegisterLoginData");
   }
 
   return (
@@ -44,45 +43,36 @@ export function Header({ user }: HeaderProps) {
       style={{
         ...(user
           ? {
-            backgroundColor: '#1967FB'
-          }
+              backgroundColor: "#475569",
+            }
           : {
-            backgroundColor: '#FFFFFF'
-          })
+              backgroundColor: "#475569",
+            }),
       }}
     >
       {user ? (
         <>
           <AboutUser>
-            <Avatar source={{ uri: user.avatar_url }} />
+            <Avatar source={require("../../../assets/images/adaptive-icon.png")} />
 
             <TextContainer>
               <HelloMessage>
-                Olá, <BoldText>{user.name}</BoldText>
+                Olá,
+                {/* <BoldText>{user.name}</BoldText> */}
               </HelloMessage>
 
-              <SecondaryMessage>
-                Sinta-se seguro aqui
-              </SecondaryMessage>
+              <SecondaryMessage>Sinta-se seguro aqui</SecondaryMessage>
             </TextContainer>
           </AboutUser>
 
           <AddButton onPress={handleAddPass}>
-            <Icon
-              name="plus"
-              color="#FFFFFF"
-              size={24}
-            />
+            <Icon name="plus" color="#FFFFFF" size={24} />
           </AddButton>
         </>
       ) : (
         <>
           <BackButton onPress={goBack}>
-            <Icon
-              name="chevron-left"
-              color="#1967FB"
-              size={28}
-            />
+            <Icon name="chevron-left" color="#ffffff" size={28} />
           </BackButton>
 
           <Title>Cadastro de senha</Title>

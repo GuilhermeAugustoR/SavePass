@@ -25,8 +25,8 @@ export const AboutUser = styled.View`
 `;
 
 export const Avatar = styled.Image`
-  width: ${RFValue(56)}px;
-  height: ${RFValue(56)}px;
+  width: ${RFValue(60)}px;
+  height: ${RFValue(60)}px;
   border-radius: 4px;
 `;
 
@@ -56,7 +56,7 @@ export const SecondaryMessage = styled.Text`
 
 export const AddButton = styled.Pressable`
   padding: ${RFValue(14.5)}px;
-  border: 1.5px #508bfc;
+  border: 1.5px #94a3b8;
   border-radius: 4px;
 `;
 
@@ -69,8 +69,8 @@ export const BackButton = styled.Pressable`
 `;
 
 export const Title = styled.Text`
-  font-size: ${RFValue(20)}px;
+  font-size: ${RFValue(18)}px;
   font-family: 'Rubik_500Medium';
-  color: #3D434D;
+  color: #ffffff;
   margin: auto;
 `;

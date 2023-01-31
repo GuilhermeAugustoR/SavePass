@@ -25,11 +25,11 @@ export const InputContainer = styled.View`
   flex-direction: row;
   align-items: center;
 
-  background: #FFFFFF;
+  background: #e3e4e5;
   border: 1px #e3e4e5;
   padding: 0 20px;
-  border-radius: 4px;
-  height: ${RFValue(56)}px;
+  border-radius: 8px;
+  height: ${RFValue(40)}px;
   width: 100%;
 `;
 

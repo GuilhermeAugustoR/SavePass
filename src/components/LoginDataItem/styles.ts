@@ -9,11 +9,11 @@ export const Container = styled(LinearGradient).attrs({
   border: 1px #e3e4e5;
   flex-direction: row;
   align-items: center;
-  min-height: ${RFValue(80)}px;
+  height: ${RFValue(65)}px;
   width: 100%;
-  border-radius: 4px;
+  border-radius: 10px;
   padding: 22px 20px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 `;
 
 export const ShowPasswordButton = styled.TouchableOpacity``;
@@ -39,7 +39,7 @@ export const Title = styled.Text`
 export const Password = styled.Text`
   font-family: 'Rubik_500Medium';
   font-size: ${RFValue(15)}px;
-  color: #1967FB;
+  color: #0e7490;
 `;
 
 export const LoginData = styled.View`

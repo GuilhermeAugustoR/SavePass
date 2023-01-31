@@ -1,9 +1,9 @@
-import styled from 'styled-components/native';
-import { RFValue } from 'react-native-responsive-fontsize';
+import styled from "styled-components/native";
+import { RFValue } from "react-native-responsive-fontsize";
 
 export const Container = styled.View`
   flex: 1;
-  background-color: #F2F3F5;
+  background-color: #0f172a;
   padding: 0 ${RFValue(24)}px;
 `;
 
