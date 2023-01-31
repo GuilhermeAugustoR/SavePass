@@ -46,7 +46,9 @@ export function Home() {
     // Filter results inside data, save with setSearchListData
 
     const filterData = searchListData.filter((data) => {
-      const isValid = data.service_name.toLowerCase().includes(searchText);
+      const isValid = data.service_name
+        .toLowerCase()
+        .includes(searchText.toLowerCase());
 
       if (isValid) {
         return data;
